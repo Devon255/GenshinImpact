@@ -10,6 +10,7 @@ async function detail() {
 
     let htmlTalent = "";
     let htmlKonstelasi = "";
+    let htmlMaterial = "";
     
 
     for(let i = 0; i < dataDetail.skillTalents.length; i ++){
@@ -32,6 +33,22 @@ async function detail() {
         `;
     }
 
+    for(let level in dataDetail.ascension_materials){
+        let materialPerLevel = dataDetail.ascension_materials[level];
+        htmlMaterial += `
+            <div>
+                <h4>Level ${level}</h4>
+            `;
+        for(let k = 0; k < materialPerLevel.length; k++){
+            let material = materialPerLevel[k];
+            htmlMaterial += `
+                <p>${material.name} (x${material.value})</p>
+            </div>
+            `;
+        }
+    }
+    
+
     wadah.innerHTML = `
     <h1>${dataDetail.name}</h1>
     <h2>${dataDetail.title}</h2>
@@ -45,6 +62,9 @@ async function detail() {
     <hr>
     <h2>Constellations</h2>
     ${htmlKonstelasi}
+    <hr>
+    <h2>Ascension Materials</h2>
+    ${htmlMaterial}
     `;
 }
 
