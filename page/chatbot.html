@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GhenChat - Teyvat AI Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../sytle/chatbot.css">
+    <link rel="stylesheet" href="../sytle/style.css">
 </head>
 <body>
-    
+    <div class="stars-overlay"></div>
+    <div class="chat-page-container">
+        <aside class="chat-sidebar">
+            <div class="sidebar-header">
+                <h2>GhenChat</h2>
+            </div>
+            <div class="sidebar-menu">
+                <a href="index.html" class="menu-btn">← Kembali</a>
+            </div>
+        </aside>
+
+        <main class="chat-main-area">
+            <header class="chat-main-header">
+                <div class="bot-info">
+                    <img src="../assets/gambar_paimon.jpg" alt="Paimon Bot">
+                    <div>
+                        <h3>Pemandu Teyvat AI</h3>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat-room" id="chat-room">
+                <div class="msg-box bot">
+                    <p>Halo Petualang! Aku adalah GhenChat, asisten di Teyvat. Butuh rekomendasi party, strategi build, atau info material? Tanyakan saja langsung di sini!</p>
+                </div>
+            </div>
+
+            <footer class="chat-input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Ketik pertanyaanmu di sini...">
+                    <button id="send-btn">Kirim</button>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="../js/chat.js"></script>
 </body>
 </html>
