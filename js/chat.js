@@ -38,7 +38,7 @@ async function kirimPesan() {
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
-                "Authorization": "Bearer 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",
+                "Authorization": " ",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
