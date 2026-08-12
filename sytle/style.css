@@ -120,6 +120,39 @@ header {
     color: rgba(236, 229, 216, 0.4);
 }
 
+.chat-bot {
+position: absolute;
+top: 2.5rem;
+right: 1.5rem;
+z-index: 10;
+display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-btn {
+    display: block;
+    text-align: center;
+    color: #ece5d8;
+    text-decoration: none;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: rgba(219, 179, 102, 0.15);
+    border-color: #dbb366;
+    color: #dbb366;
+}
+
 /* .search-wrapper .search-icon {
     position: absolute;
     right: 1.25rem;
